@@ -1,0 +1,9 @@
+<?php /* javascript inserts the player, using reasonable dimensions & the data-video-id
+
+code ends up like so:
+<span class="LimelightEmbeddedPlayer"><script src="http://assets.delvenetworks.com/player/embed.js"></script><object type="application/x-shockwave-flash" id="limelight_player_674475" name="limelight_player_674475" class="LimelightEmbeddedPlayerFlash" width="620" height="348" data="http://assets.delvenetworks.com/player/loader.swf"><param name="movie" value="http://assets.delvenetworks.com/player/loader.swf"/><param name="wmode" value="window"/><param name="allowScriptAccess" value="always"/><param name="allowFullScreen" value="true"/><param name="autoplay" value="false"/><param name="flashVars" value="mediaId=<?php echo $video->get_video_id();?>&amp;playerForm=##ID##&amp;autoplay=false"/></object><script>LimelightPlayerUtil.initEmbed('limelight_player_674475');</script></span>
+
+*/?>
+
+<script src="http://assets.delvenetworks.com/player/embed.js"></script>
+<div class="videoPlayerGoesHere" data-video-id="<?php echo $video->get_video_id();?>"></div><!--videoPlayerGoesHere -->
